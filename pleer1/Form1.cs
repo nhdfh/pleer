@@ -99,7 +99,7 @@ namespace pleer1
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
+                    
                     filePath = openFileDialog.FileName;
                    
                     file = filePath;
