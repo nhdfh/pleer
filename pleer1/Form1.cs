@@ -36,21 +36,7 @@ namespace pleer1
             outputDevice.PlaybackStopped += (s, a) => { if (closing) { outputDevice.Dispose(); audioFile.Dispose(); } };
             outputDevice.Init(audioFile);
             trackBar1.Value =(int) (audioFile.Volume*100f);
-            //var f = new Form();
-            //var b = new Button() { Text = "Play" };
-            //b.Click += (s, a) => outputDevice.Play();
-            //var b2 = new Button() { Text = "Stop", Left = b.Right };
-            //b2.Click += (s, a) => outputDevice.Stop();
-            //var b3 = new Button { Text = "Rewind", Left = b2.Right };
-            //b3.Click += (s, a) => audioFile.Position = 0;
-            //var b4 = new Button { Text = "Open", Left = b3.Right };
-            //b4.Click += new EventHandler(Open_file);
-            //var t = new TrackBar() { Minimum = 0, Maximum = 100, Value = 100, Top = b.Bottom, TickFrequency = 10 };
-            //t.Scroll += (s, a) => outputDevice.Volume = t.Value / 100f;
-            //// Alternative: t.Scroll += (s, a) => audioFile.Volume = t.Value / 100f;
-            //f.Controls.AddRange(new Control[] { b, b2, b3, b4, t });
-            //f.FormClosing += (s, a) => { closing = true; outputDevice.Stop(); };
-            //f.ShowDialog();
+           
         }
         //private void Open_file(object sender, EventArgs e)
         //{
